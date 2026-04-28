@@ -184,14 +184,18 @@ Tapi kalau jadi portfolio kamu, jangan lupa ganti namanya ya 😄
 [![Bootstrap Icons](https://img.shields.io/badge/Bootstrap_Icons-1.x-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white)](https://icons.getbootstrap.com/)
 [![SweetAlert2](https://img.shields.io/badge/SweetAlert2-latest-FF6B6B?style=for-the-badge)](https://sweetalert2.github.io/)
 [![License](https://img.shields.io/badge/License-MIT-22c55e?style=for-the-badge)](https://opensource.org/licenses/MIT)
-[![Status](https://img.shields.io/badge/Status-Live%20%F0%9F%9F%A2-0d9488?style=for-the-badge)](https://kampung-ketupat.infinityfree.me/)
+[![Status](https://img.shields.io/badge/Status-Live-0d9488?style=for-the-badge)](https://kampung-ketupat.infinityfree.me/)
+
+</div>
 
 ---
+
+<div align="center">
 
 ### 🌐 Live Demo & Sumber Daya Proyek
 
 | Sumber Daya | Tautan |
-|---|---|
+|:---|:---|
 | 🌍 **Website Live** | [kampung-ketupat.infinityfree.me](https://kampung-ketupat.infinityfree.me/) |
 | 📊 **Slide Presentasi (PPT)** | [Lihat di Canva](https://canva.link/54cr2ep7p6ouwdr) |
 | 📄 **Laporan Proyek** | [Google Drive – Laporan](https://drive.google.com/drive/folders/1NnE_3vCfHOyXmjiId5lK8Y-TGkFcHNcU?usp=sharing) |
@@ -218,6 +222,7 @@ Tapi kalau jadi portfolio kamu, jangan lupa ganti namanya ya 😄
 - [⚙️ Konfigurasi Environment](#️-konfigurasi-environment)
 - [🧪 Testing & Smoke Test](#-testing--smoke-test)
 - [📌 Catatan Deployment](#-catatan-deployment)
+- [📊 Sumber Daya Proyek](#-sumber-daya-proyek)
 - [👥 Tim & Kontribusi](#-tim--kontribusi)
 
 ---
@@ -231,11 +236,9 @@ Website ini menyediakan dua lapisan utama:
 - **Halaman Publik** — Dapat diakses siapa saja; menampilkan beranda, galeri foto, event, UMKM, lokasi, kontak, dan form kritik & saran.
 - **Panel Admin** — Hanya bisa diakses setelah login; memiliki dashboard statistik dan kemampuan CRUD penuh untuk semua konten.
 
-### Tujuan Utama Proyek
+> **Tujuan Utama:** Membantu Kampung Ketupat dalam memiliki kehadiran digital yang representatif, mudah dikelola, dan aman — tanpa ketergantungan pada framework besar seperti Laravel atau CodeIgniter.
 
-> Membantu Kampung Ketupat dalam memiliki kehadiran digital yang representatif, mudah dikelola, dan aman — tanpa ketergantungan pada framework besar seperti Laravel atau CodeIgniter.
-
-Fokus pengembangan:
+**Fokus pengembangan:**
 
 - **Kemudahan pengelolaan konten wisata** — Admin non-teknis pun bisa mengelola konten.
 - **Antarmuka bersih dan responsif** — Nyaman di perangkat mobile maupun desktop.
@@ -248,103 +251,101 @@ Fokus pengembangan:
 
 ### 🌐 Halaman Publik
 
-#### 🏠 Beranda (`/`)
-- Landing page dengan ringkasan konten utama (galeri terbaru, event mendatang, UMKM unggulan).
-- Tampilan hero section informatif untuk menyambut pengunjung.
+**🏠 Beranda (`/`)**
 
-#### 🖼️ Galeri (`/galeri`)
+- Landing page dengan ringkasan konten utama: galeri terbaru, event mendatang, dan UMKM unggulan.
+- Hero section informatif untuk menyambut pengunjung.
+
+**🖼️ Galeri (`/galeri`)**
+
 - Menampilkan koleksi foto publik kampung wisata.
 - Foto dikelompokkan berdasarkan **kategori**: `wisata`, `kuliner`, `budaya`, `fasilitas`, `umum`.
 - Hanya foto dengan status `is_publish = 1` yang ditampilkan ke publik.
 
-#### 📅 Event (`/event`)
-- Menampilkan daftar kegiatan/event kampung lengkap dengan:
-  - Nama event & deskripsi.
-  - Tanggal mulai dan tanggal selesai.
-  - Jam mulai & jam selesai.
-  - Lokasi penyelenggaraan.
-  - Status event: `Akan Datang`, `Berlangsung`, `Selesai`.
-  - Link informasi tambahan (opsional).
+**📅 Event (`/event`)**
 
-#### 🏪 UMKM (`/umkm`)
+- Menampilkan daftar kegiatan/event kampung lengkap dengan nama event, deskripsi, tanggal mulai & selesai, jam mulai & jam selesai, lokasi penyelenggaraan, status (`Akan Datang` / `Berlangsung` / `Selesai`), dan link informasi tambahan (opsional).
+
+**🏪 UMKM (`/umkm`)**
+
 - Direktori usaha mikro, kecil, dan menengah lokal.
-- Setiap entri UMKM memiliki: nama usaha, nama pemilik, kategori, deskripsi, produk unggulan, kontak, dan alamat.
-- Kategori UMKM: `kuliner`, `kerajinan`, `souvenir`, `jasa`, `lainnya`.
+- Setiap entri memiliki: nama usaha, nama pemilik, kategori, deskripsi, produk unggulan, kontak, dan alamat.
+- Kategori tersedia: `kuliner`, `kerajinan`, `souvenir`, `jasa`, `lainnya`.
 - Foto produk/usaha dapat diunggah dari panel admin.
 
-#### 📍 Lokasi (`/lokasi`)
-- Halaman informasi lokasi kampung.
+**📍 Lokasi (`/lokasi`)**
 
-#### 📞 Kontak (`/kontak`)
-- Halaman informasi kontak kampung.
+- Halaman informasi lokasi dan peta kampung.
 
-#### 💬 Kritik & Saran (`/kritik-saran`)
-- Form masukan pengunjung dengan field:
-  - Nama pengunjung.
-  - Alamat email.
-  - Jenis pesan: `kritik`, `saran`, `pertanyaan`, `apresiasi`.
-  - Isi pesan.
+**📞 Kontak (`/kontak`)**
+
+- Halaman informasi kontak pengelola kampung.
+
+**💬 Kritik & Saran (`/kritik-saran`)**
+
+- Form masukan pengunjung dengan field: nama pengunjung, alamat email, jenis pesan (`kritik` / `saran` / `pertanyaan` / `apresiasi`), dan isi pesan.
 - Semua kiriman berstatus `pending` hingga dimoderasi admin.
-- Admin dapat mengatur periode tampil publik (`tampil_mulai` dan `tampil_selesai`).
+- Admin dapat mengatur periode tampil publik melalui `tampil_mulai` dan `tampil_selesai`.
 
 ---
 
 ### 🔒 Panel Admin
 
-#### 🔑 Autentikasi (`/admin/login`)
-- Login dengan username dan password (password di-hash dengan `PASSWORD_DEFAULT` / bcrypt).
-- Proteksi brute-force via **Login Throttle** (mencatat jumlah percobaan per IP & username).
-- Logout menggunakan POST request (proteksi CSRF).
-- Session hardening dan regenerasi ID sesi setelah login.
+**🔑 Autentikasi (`/admin/login`)**
 
-#### 📊 Dashboard (`/admin/dashboard`)
-- Ringkasan statistik konten:
-  - Jumlah foto galeri (total & yang dipublikasikan).
-  - Jumlah event (berdasarkan status).
-  - Jumlah data UMKM.
-  - Jumlah kritik & saran (pending, diterima, publik).
+- Login dengan username dan password (di-hash dengan `PASSWORD_DEFAULT` / bcrypt).
+- Proteksi brute-force via **Login Throttle** (mencatat percobaan per IP & username).
+- Logout menggunakan POST request (terlindungi CSRF).
+- Session hardening dan regenerasi ID sesi setelah login berhasil.
 
-#### 🖼️ Manajemen Galeri (`/admin/galeri`)
-- **Tambah** foto baru dengan judul, deskripsi, kategori, dan upload file gambar.
+**📊 Dashboard (`/admin/dashboard`)**
+
+- Ringkasan statistik konten: jumlah foto galeri (total & terpublikasi), jumlah event (per status), jumlah UMKM, serta jumlah kritik & saran (pending, diterima, publik).
+
+**🖼️ Manajemen Galeri (`/admin/galeri`)**
+
+- **Tambah** foto baru — judul, deskripsi, kategori, dan upload file gambar.
 - **Edit** data galeri yang sudah ada.
-- **Hapus** foto (POST request, terlindungi CSRF).
-- **Toggle Publish** — aktifkan/nonaktifkan visibilitas foto ke publik satu per satu.
+- **Hapus** foto — via POST request, terlindungi CSRF.
+- **Toggle Publish** — aktifkan/nonaktifkan visibilitas foto satu per satu.
 - **Publish All** — publikasikan semua foto sekaligus.
 
-#### 📅 Manajemen Event (`/admin/event`)
-- **Tambah** event baru dengan form lengkap (nama, deskripsi, tanggal, jam, lokasi, status, link info, foto).
+**📅 Manajemen Event (`/admin/event`)**
+
+- **Tambah** event baru — nama, deskripsi, tanggal, jam, lokasi, status, link info, dan foto.
 - **Edit** informasi event.
 - **Hapus** event.
 - Status event dikelola sebagai ENUM: `akan_datang`, `berlangsung`, `selesai`.
 
-#### 🏪 Manajemen UMKM (`/admin/umkm`)
-- **Tambah** data UMKM baru dengan upload foto.
-- **Edit** data UMKM.
-- **Hapus** data UMKM.
+**🏪 Manajemen UMKM (`/admin/umkm`)**
 
-#### 💬 Manajemen Kritik & Saran (`/admin/kritik-saran`)
-- Halaman utama: daftar pesan dengan status `pending` atau `diterima`.
-- **Terima** — ubah status pesan menjadi `diterima`.
-- **Kembalikan** — kembalikan pesan ke status `pending`.
-- **Tampilkan** — publikasikan pesan ke halaman publik (ubah ke `publik`).
-- **Sembunyikan** — sembunyikan kembali dari tampilan publik.
-- **Arsip** (`/admin/kritik-saran/arsip`) — melihat riwayat pesan yang sudah diarsipkan.
+- **Tambah** data UMKM baru dengan upload foto.
+- **Edit** dan **Hapus** data UMKM.
+
+**💬 Manajemen Kritik & Saran (`/admin/kritik-saran`)**
+
+- Tampilkan daftar pesan berstatus `pending` atau `diterima`.
+- **Terima** — ubah status ke `diterima`.
+- **Kembalikan** — kembalikan ke status `pending`.
+- **Tampilkan** — publikasikan pesan ke halaman publik (`publik`).
+- **Sembunyikan** — tarik kembali dari tampilan publik.
+- **Arsip** (`/admin/kritik-saran/arsip`) — riwayat pesan yang sudah diarsipkan.
 
 ---
 
 ## 🛠️ Stack Teknologi
 
 | Kategori | Teknologi |
-|---|---|
+|:---|:---|
 | **Backend Language** | PHP 8.2+ (native, tanpa framework) |
-| **Database** | MySQL 8.0+ / MariaDB kompatibel |
-| **Arsitektur** | MVC (Model-View-Controller) sederhana, dibangun dari nol |
-| **Frontend** | HTML5, CSS3 (custom), JavaScript (Vanilla) |
+| **Database** | MySQL 8.0+ / MariaDB |
+| **Arsitektur** | MVC (Model-View-Controller) custom, dibangun dari nol |
+| **Frontend** | HTML5, CSS3 (custom), JavaScript Vanilla |
 | **UI Icons** | [Bootstrap Icons](https://icons.getbootstrap.com/) |
-| **Alert/Dialog** | [SweetAlert2](https://sweetalert2.github.io/) |
+| **Alert / Dialog** | [SweetAlert2](https://sweetalert2.github.io/) |
 | **Web Server** | Apache (dengan `.htaccess` rewrite rules) |
-| **File Upload** | Native PHP (`$_FILES`, validasi MIME & ukuran) |
-| **Session** | PHP Session native (dengan hardening) |
+| **File Upload** | Native PHP `$_FILES` dengan validasi MIME & ukuran |
+| **Session** | PHP Session native dengan hardening |
 | **Security** | CSRF token, Login Throttle, Security Logger |
 
 ---
@@ -354,108 +355,108 @@ Fokus pengembangan:
 <details>
 <summary><strong>📂 Klik untuk memperluas struktur folder lengkap</strong></summary>
 
-```text
+```
 kampung_ketupat/
-│
-├── app/                            # Inti aplikasi (MVC)
-│   ├── controllers/                # Controller untuk setiap fitur
-│   │   ├── AdminController.php         → Dashboard admin
-│   │   ├── AdminEventController.php    → CRUD event (admin)
-│   │   ├── AdminGaleriController.php   → CRUD galeri + toggle publish
-│   │   ├── AdminKritikController.php   → Moderasi kritik & saran
-│   │   ├── AdminUMKMController.php     → CRUD UMKM (admin)
-│   │   ├── AuthController.php          → Login & logout
-│   │   ├── BerandaController.php       → Halaman beranda
-│   │   ├── EventController.php         → Halaman event publik
-│   │   ├── GaleriController.php        → Halaman galeri publik
-│   │   ├── KontakController.php        → Halaman kontak
-│   │   ├── KritikSaranController.php   → Form & tampilan kritik saran publik
-│   │   ├── LokasiController.php        → Halaman lokasi
-│   │   ├── UMKMController.php          → Halaman UMKM publik
-│   │   └── WisataController.php        → Halaman wisata
-│   │
-│   ├── core/                       # Komponen inti framework
-│   │   ├── Controller.php              → Base controller (view loader)
-│   │   ├── Csrf.php                    → CSRF token generator & validator
-│   │   ├── ErrorHandler.php            → Global error & exception handler
-│   │   ├── LoginThrottle.php           → Rate limiter login (anti brute-force)
-│   │   ├── Model.php                   → Base model (koneksi DB)
-│   │   ├── Router.php                  → HTTP router (GET/POST dispatch)
-│   │   └── SecurityLogger.php          → Pencatat kejadian keamanan
-│   │
-│   ├── helpers/
-│   │   └── upload.php                  → Helper validasi & upload file gambar
-│   │
-│   ├── models/                     # Model database per entitas
-│   │   ├── AdminModel.php              → Query tabel admin
-│   │   ├── EventModel.php              → Query tabel event
-│   │   ├── GaleriModel.php             → Query tabel galeri
-│   │   ├── KritikSaranModel.php        → Query tabel kritik_saran
-│   │   └── UMKMModel.php               → Query tabel umkm
-│   │
-│   └── views/                      # Template HTML (PHP Views)
-│       ├── admin/                      → Tampilan panel admin
-│       │   ├── layouts/
-│       │   │   ├── header.php
-│       │   │   ├── footer.php
-│       │   │   └── main.php
-│       │   ├── dashboard.php
-│       │   ├── event/         (index, create, edit)
-│       │   ├── galeri/        (index, create, edit)
-│       │   ├── kritik_saran/  (index)
-│       │   └── umkm/          (index, create, edit)
-│       │
-│       ├── auth/
-│       │   └── login.php               → Halaman login admin
-│       │
-│       └── user/                   → Tampilan halaman publik
-│           ├── layouts/
-│           │   ├── header.php
-│           │   └── footer.php
-│           ├── beranda/
-│           ├── event/
-│           ├── galeri/
-│           ├── kontak/
-│           ├── kritik_saran/
-│           ├── errors/
-│           │   ├── 404.php             → Halaman 404 Not Found
-│           │   └── 500.php             → Halaman 500 Server Error
-│           └── (wisata, lokasi, umkm)
-│
-├── config/
-│   └── database.php                → Konfigurasi koneksi DB + auto-init schema
-│
-├── database/
-│   └── kampung_ketupat.sql         → Template skema SQL (tanpa data)
-│
-├── public/                         → Document root web server
-│   ├── index.php                   → Front controller (entry point)
-│   ├── .htaccess                   → Rewrite rules & blokir akses sensitif
-│   └── assets/
-│       ├── css/
-│       │   ├── style.css               → Stylesheet halaman publik (~60KB)
-│       │   └── admin.css               → Stylesheet panel admin (~42KB)
-│       ├── js/
-│       │   ├── app.js                  → Logic utama frontend (~30KB)
-│       │   ├── main.js                 → Inisialisasi & event listener
-│       │   └── swal-helper.js          → Helper SweetAlert2
-│       ├── images/
-│       │   └── hero-ketupat.png        → Gambar hero section beranda
-│       └── uploads/                → Folder upload dinamis
-│           ├── event/                  → Upload foto event
-│           ├── galeri/                 → Upload foto galeri
-│           └── umkm/                   → Upload foto UMKM
-│
-├── routes/
-│   └── web.php                     → Definisi semua route aplikasi
-│
-├── storage/
-│   └── logs/                       → File log keamanan (security logs)
-│
-├── .htaccess                       → Redirect ke public/ & blokir akses root
-├── .gitignore                      → Ignore file sensitif & cache
-├── index.php                       → Redirect helper ke public/
-└── kampung_ketupat.sql             → File SQL terbaru (dengan data aktual)
+|
++-- app/
+|   |
+|   +-- controllers/
+|   |   +-- AdminController.php           -> Dashboard admin
+|   |   +-- AdminEventController.php      -> CRUD event (admin)
+|   |   +-- AdminGaleriController.php     -> CRUD galeri + toggle publish
+|   |   +-- AdminKritikController.php     -> Moderasi kritik & saran
+|   |   +-- AdminUMKMController.php       -> CRUD UMKM (admin)
+|   |   +-- AuthController.php            -> Login & logout
+|   |   +-- BerandaController.php         -> Halaman beranda
+|   |   +-- EventController.php           -> Halaman event publik
+|   |   +-- GaleriController.php          -> Halaman galeri publik
+|   |   +-- KontakController.php          -> Halaman kontak
+|   |   +-- KritikSaranController.php     -> Form & tampilan kritik saran publik
+|   |   +-- LokasiController.php          -> Halaman lokasi
+|   |   +-- UMKMController.php            -> Halaman UMKM publik
+|   |   +-- WisataController.php          -> Halaman wisata
+|   |
+|   +-- core/
+|   |   +-- Controller.php                -> Base controller (view loader)
+|   |   +-- Csrf.php                      -> CSRF token generator & validator
+|   |   +-- ErrorHandler.php              -> Global error & exception handler
+|   |   +-- LoginThrottle.php             -> Rate limiter login (anti brute-force)
+|   |   +-- Model.php                     -> Base model (koneksi DB)
+|   |   +-- Router.php                    -> HTTP router (GET/POST dispatch)
+|   |   +-- SecurityLogger.php            -> Pencatat kejadian keamanan
+|   |
+|   +-- helpers/
+|   |   +-- upload.php                    -> Helper validasi & upload file gambar
+|   |
+|   +-- models/
+|   |   +-- AdminModel.php                -> Query tabel admin
+|   |   +-- EventModel.php                -> Query tabel event
+|   |   +-- GaleriModel.php               -> Query tabel galeri
+|   |   +-- KritikSaranModel.php          -> Query tabel kritik_saran
+|   |   +-- UMKMModel.php                 -> Query tabel umkm
+|   |
+|   +-- views/
+|       +-- admin/
+|       |   +-- layouts/
+|       |   |   +-- header.php
+|       |   |   +-- footer.php
+|       |   |   +-- main.php
+|       |   +-- dashboard.php
+|       |   +-- event/           (index.php, create.php, edit.php)
+|       |   +-- galeri/          (index.php, create.php, edit.php)
+|       |   +-- kritik_saran/    (index.php)
+|       |   +-- umkm/            (index.php, create.php, edit.php)
+|       |
+|       +-- auth/
+|       |   +-- login.php                 -> Halaman login admin
+|       |
+|       +-- user/
+|           +-- layouts/
+|           |   +-- header.php
+|           |   +-- footer.php
+|           +-- beranda/      (index.php)
+|           +-- event/        (index.php)
+|           +-- galeri/       (index.php)
+|           +-- kontak/       (index.php)
+|           +-- kritik_saran/ (index.php)
+|           +-- errors/
+|               +-- 404.php              -> Halaman 404 Not Found
+|               +-- 500.php              -> Halaman 500 Server Error
+|
++-- config/
+|   +-- database.php                  -> Konfigurasi koneksi DB + auto-init schema
+|
++-- database/
+|   +-- kampung_ketupat.sql           -> Template skema SQL (tanpa data)
+|
++-- public/
+|   +-- index.php                     -> Front controller (entry point)
+|   +-- .htaccess                     -> Rewrite rules & blokir akses sensitif
+|   +-- assets/
+|       +-- css/
+|       |   +-- style.css                 -> Stylesheet halaman publik (~60 KB)
+|       |   +-- admin.css                 -> Stylesheet panel admin (~42 KB)
+|       +-- js/
+|       |   +-- app.js                    -> Logic utama frontend (~30 KB)
+|       |   +-- main.js                   -> Inisialisasi & event listener
+|       |   +-- swal-helper.js            -> Helper SweetAlert2
+|       +-- images/
+|       |   +-- hero-ketupat.png          -> Gambar hero section beranda
+|       +-- uploads/
+|           +-- event/                    -> Upload foto event
+|           +-- galeri/                   -> Upload foto galeri
+|           +-- umkm/                     -> Upload foto UMKM
+|
++-- routes/
+|   +-- web.php                       -> Definisi semua route aplikasi
+|
++-- storage/
+|   +-- logs/                         -> File log keamanan
+|
++-- .htaccess                         -> Redirect ke public/ & blokir akses root
++-- .gitignore
++-- index.php                         -> Redirect helper ke public/
++-- kampung_ketupat.sql               -> File SQL terbaru (dengan data aktual)
 ```
 
 </details>
@@ -464,22 +465,24 @@ kampung_ketupat/
 
 ## 🗃️ Skema Database
 
-Database `kampung_ketupat` terdiri dari **6 tabel** yang saling mendukung fungsionalitas aplikasi.
+Database `kampung_ketupat` terdiri dari **6 tabel** utama.
 
 ### Tabel `admin`
+
 Menyimpan akun administrator yang dapat login ke panel admin.
 
 ```sql
 CREATE TABLE admin (
     id            INT AUTO_INCREMENT PRIMARY KEY,
     username      VARCHAR(100) UNIQUE,
-    password      VARCHAR(255),          -- bcrypt (PASSWORD_DEFAULT)
+    password      VARCHAR(255),
     nama_lengkap  VARCHAR(150),
     created_at    TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 ```
 
 ### Tabel `galeri`
+
 Menyimpan data foto/gambar yang ditampilkan di halaman galeri publik.
 
 ```sql
@@ -489,12 +492,13 @@ CREATE TABLE galeri (
     deskripsi   TEXT,
     foto        VARCHAR(255),
     kategori    ENUM('wisata','kuliner','budaya','fasilitas','umum') DEFAULT 'umum',
-    is_publish  TINYINT(1) NOT NULL DEFAULT 1,   -- 1 = tampil publik
+    is_publish  TINYINT(1) NOT NULL DEFAULT 1,
     created_at  TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 ```
 
 ### Tabel `event`
+
 Menyimpan informasi kegiatan/event kampung.
 
 ```sql
@@ -507,7 +511,7 @@ CREATE TABLE event (
     lokasi          VARCHAR(255),
     foto            VARCHAR(255),
     status          ENUM('akan_datang','berlangsung','selesai') DEFAULT 'akan_datang',
-    link_info       VARCHAR(255) NULL,    -- Tautan informasi tambahan
+    link_info       VARCHAR(255) NULL,
     jam_mulai       TIME NULL,
     jam_selesai     TIME NULL,
     created_at      TIMESTAMP DEFAULT CURRENT_TIMESTAMP
@@ -515,6 +519,7 @@ CREATE TABLE event (
 ```
 
 ### Tabel `umkm`
+
 Menyimpan data usaha mikro kecil dan menengah lokal.
 
 ```sql
@@ -533,6 +538,7 @@ CREATE TABLE umkm (
 ```
 
 ### Tabel `kritik_saran`
+
 Menyimpan pesan masukan dari pengunjung beserta status moderasi.
 
 ```sql
@@ -544,14 +550,15 @@ CREATE TABLE kritik_saran (
     pesan            TEXT,
     sudah_dibaca     TINYINT(1) DEFAULT 0,
     status           ENUM('pending','diterima','publik') DEFAULT 'pending',
-    tampil_mulai     DATE NULL,       -- Batas awal tampil di publik
-    tampil_selesai   DATE NULL,       -- Batas akhir tampil di publik
+    tampil_mulai     DATE NULL,
+    tampil_selesai   DATE NULL,
     created_at       TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 ```
 
 ### Tabel `auth_login_attempts`
-Melacak percobaan login per IP untuk mekanisme throttle (anti brute-force).
+
+Melacak percobaan login per IP untuk mekanisme throttle anti brute-force.
 
 ```sql
 CREATE TABLE auth_login_attempts (
@@ -567,18 +574,18 @@ CREATE TABLE auth_login_attempts (
 );
 ```
 
-> 💡 **Auto Cleanup:** Data percobaan login yang lebih dari 2 hari otomatis dihapus setiap kali `config/database.php` dijalankan dalam mode `DB_AUTO_INIT=true`.
+> **Auto Cleanup:** Data percobaan login lebih dari 2 hari otomatis dihapus setiap kali `config/database.php` dijalankan dalam mode `DB_AUTO_INIT=true`.
 
 ---
 
 ## 🔀 Daftar Route
 
-Semua route didefinisikan di [`routes/web.php`](routes/web.php) dan diproses oleh `Router.php`.
+Semua route didefinisikan di `routes/web.php` dan diproses oleh `Router.php`.
 
-### Route Publik (GET)
+### Route Publik
 
 | Method | Path | Controller@Method | Keterangan |
-|---|---|---|---|
+|:---|:---|:---|:---|
 | GET | `/` | `BerandaController@index` | Halaman beranda |
 | GET | `/wisata` | `WisataController@index` | Halaman wisata |
 | GET | `/event` | `EventController@index` | Daftar event |
@@ -592,15 +599,15 @@ Semua route didefinisikan di [`routes/web.php`](routes/web.php) dan diproses ole
 ### Route Autentikasi Admin
 
 | Method | Path | Controller@Method | Keterangan |
-|---|---|---|---|
+|:---|:---|:---|:---|
 | GET | `/admin/login` | `AuthController@login` | Form login |
 | POST | `/admin/login/proses` | `AuthController@proses` | Proses login |
 | POST | `/admin/logout` | `AuthController@logout` | Logout (CSRF-protected) |
 
-### Route Admin – Dashboard & Galeri
+### Route Admin — Dashboard & Galeri
 
 | Method | Path | Controller@Method | Keterangan |
-|---|---|---|---|
+|:---|:---|:---|:---|
 | GET | `/admin/dashboard` | `AdminController@dashboard` | Dashboard statistik |
 | GET | `/admin/galeri` | `AdminGaleriController@index` | Daftar galeri |
 | GET | `/admin/galeri/create` | `AdminGaleriController@create` | Form tambah foto |
@@ -611,10 +618,10 @@ Semua route didefinisikan di [`routes/web.php`](routes/web.php) dan diproses ole
 | POST | `/admin/galeri/togglePublish` | `AdminGaleriController@togglePublish` | Toggle publish satu foto |
 | POST | `/admin/galeri/publishAll` | `AdminGaleriController@publishAll` | Publish semua foto |
 
-### Route Admin – Event
+### Route Admin — Event
 
 | Method | Path | Controller@Method | Keterangan |
-|---|---|---|---|
+|:---|:---|:---|:---|
 | GET | `/admin/event` | `AdminEventController@index` | Daftar event |
 | GET | `/admin/event/create` | `AdminEventController@create` | Form tambah event |
 | POST | `/admin/event/store` | `AdminEventController@store` | Simpan event baru |
@@ -622,10 +629,10 @@ Semua route didefinisikan di [`routes/web.php`](routes/web.php) dan diproses ole
 | POST | `/admin/event/update` | `AdminEventController@update` | Simpan perubahan event |
 | POST | `/admin/event/delete` | `AdminEventController@delete` | Hapus event |
 
-### Route Admin – UMKM
+### Route Admin — UMKM
 
 | Method | Path | Controller@Method | Keterangan |
-|---|---|---|---|
+|:---|:---|:---|:---|
 | GET | `/admin/umkm` | `AdminUMKMController@index` | Daftar UMKM |
 | GET | `/admin/umkm/create` | `AdminUMKMController@create` | Form tambah UMKM |
 | POST | `/admin/umkm/store` | `AdminUMKMController@store` | Simpan UMKM baru |
@@ -633,10 +640,10 @@ Semua route didefinisikan di [`routes/web.php`](routes/web.php) dan diproses ole
 | POST | `/admin/umkm/update` | `AdminUMKMController@update` | Simpan perubahan UMKM |
 | POST | `/admin/umkm/delete` | `AdminUMKMController@delete` | Hapus UMKM |
 
-### Route Admin – Kritik & Saran
+### Route Admin — Kritik & Saran
 
 | Method | Path | Controller@Method | Keterangan |
-|---|---|---|---|
+|:---|:---|:---|:---|
 | GET | `/admin/kritik-saran` | `AdminKritikController@index` | Daftar pesan masuk |
 | GET | `/admin/kritik-saran/arsip` | `AdminKritikController@arsip` | Arsip pesan |
 | POST | `/admin/kritik-saran/terima` | `AdminKritikController@terima` | Terima pesan |
@@ -648,36 +655,37 @@ Semua route didefinisikan di [`routes/web.php`](routes/web.php) dan diproses ole
 
 ## 🧩 Arsitektur MVC
 
-Aplikasi ini mengimplementasikan pola **Model-View-Controller** secara native dengan PHP, tanpa framework pihak ketiga.
+Aplikasi mengimplementasikan pola **Model-View-Controller** secara native dengan PHP tanpa framework pihak ketiga.
 
 ```
 HTTP Request
-     │
-     ▼
-public/index.php          ← Front Controller (entry point tunggal)
-     │
-     ▼
-app/core/Router.php       ← Parsing URL & dispatch ke controller yang tepat
-     │
-     ├──► app/controllers/[NamaController].php
-     │         │
-     │         ├──► app/models/[NamaModel].php   ← Query ke MySQL
-     │         │         │
-     │         │         └──► config/database.php  ← Koneksi mysqli
-     │         │
-     │         └──► app/views/[path/view].php    ← Render HTML ke browser
-     │
-     └──► app/core/ErrorHandler.php   ← Tangani error 404/500
+     |
+     v
+public/index.php              <- Front Controller (entry point tunggal)
+     |
+     v
+app/core/Router.php           <- Parsing URL & dispatch ke controller
+     |
+     +---> app/controllers/[NamaController].php
+     |           |
+     |           +---> app/models/[NamaModel].php   <- Query ke MySQL
+     |           |           |
+     |           |           v
+     |           |     config/database.php           <- Koneksi mysqli
+     |           |
+     |           +---> app/views/[path/view].php     <- Render HTML
+     |
+     +---> app/core/ErrorHandler.php                 <- Tangani 404 / 500
 ```
 
 ### Komponen Core
 
 | File | Peran |
-|---|---|
+|:---|:---|
 | `Router.php` | Mencocokkan URL + HTTP method ke `Controller@method`, menangani 404 |
-| `Controller.php` | Base class controller; menyediakan helper untuk memuat view |
-| `Model.php` | Base class model; menyediakan akses ke koneksi database global |
-| `Csrf.php` | Generate token CSRF, validasi token pada POST request |
+| `Controller.php` | Base class controller; helper untuk memuat view |
+| `Model.php` | Base class model; akses ke koneksi database global |
+| `Csrf.php` | Generate token CSRF (`random_bytes` 32-byte), validasi token pada POST |
 | `LoginThrottle.php` | Mencatat percobaan login per IP/username, memblokir jika melebihi batas |
 | `ErrorHandler.php` | Mendaftarkan `set_error_handler` & `set_exception_handler` global |
 | `SecurityLogger.php` | Menulis log kejadian keamanan ke `storage/logs/` |
@@ -693,19 +701,18 @@ app/core/Router.php       ← Parsing URL & dispatch ke controller yang tepat
 
 - PHP 8.2 atau lebih baru
 - MySQL 8.0+ atau MariaDB
-- Web server Apache (dengan `mod_rewrite` aktif)
-- Atau: gunakan PHP built-in server untuk development lokal
+- Apache dengan `mod_rewrite` aktif (atau PHP built-in server untuk development)
 
-### Langkah 1 — Clone Repository
+### 1. Clone Repository
 
 ```bash
 git clone https://github.com/kampungketupat/kampung_ketupat.git
 cd kampung_ketupat
 ```
 
-### Langkah 2 — Konfigurasi Environment
+### 2. Konfigurasi Environment
 
-Buat file `.env` di root project (atau atur environment variable web server):
+Atur environment variable berikut via `.env`, cPanel, atau konfigurasi server:
 
 ```env
 APP_ENV=local
@@ -720,49 +727,48 @@ DB_AUTO_INIT=true
 DB_AUTO_SEED=true
 ```
 
-> ⚠️ Untuk **production**, ubah `APP_ENV=production`, `DB_AUTO_INIT=false`, dan `DB_AUTO_SEED=false`.
+> Untuk **production**, ubah `APP_ENV=production` dan set `DB_AUTO_INIT=false`, `DB_AUTO_SEED=false`.
 
-### Langkah 3 — Import Database
+### 3. Import Database
 
-**Opsi A — Import manual (direkomendasikan untuk data aktual):**
+**Opsi A — Data aktual (direkomendasikan):**
+
 ```bash
 mysql -u root -p kampung_ketupat < kampung_ketupat.sql
 ```
 
-**Opsi B — Import template skema kosong:**
+**Opsi B — Template skema kosong:**
+
 ```bash
 mysql -u root -p kampung_ketupat < database/kampung_ketupat.sql
 ```
 
 **Opsi C — Auto-init (development saja):**
-Biarkan `DB_AUTO_INIT=true` dan `DB_AUTO_SEED=true`, skema dan data awal akan dibuat otomatis saat pertama kali aplikasi diakses.
 
-### Langkah 4 — Jalankan Aplikasi (Development Lokal)
+Biarkan `DB_AUTO_INIT=true` dan `DB_AUTO_SEED=true`. Skema dan data awal dibuat otomatis saat pertama kali aplikasi diakses.
+
+### 4. Jalankan Aplikasi
 
 ```bash
-# Menggunakan PHP built-in server
 php -S 127.0.0.1:8088 -t public
-
-# Atau dengan Laragon / XAMPP, arahkan document root ke folder public/
 ```
 
-### Langkah 5 — Akses di Browser
+Atau arahkan document root Laragon / XAMPP ke folder `public/`.
 
-```text
-# Halaman Publik
-http://127.0.0.1:8088/
+### 5. Akses di Browser
 
-# Panel Admin
-http://127.0.0.1:8088/admin/login
+```
+Halaman publik   : http://127.0.0.1:8088/
+Panel admin      : http://127.0.0.1:8088/admin/login
 
-# Kredensial default (setelah auto-seed)
-Username : admin
-Password : admin123
+Kredensial default (setelah auto-seed):
+  Username : admin
+  Password : admin123
 ```
 
-> 🔒 **Segera ganti password default setelah pertama kali login!**
+> Segera **ganti password default** setelah pertama kali login!
 
-### Langkah 6 — Konfigurasi Permissions (Upload)
+### 6. Permission Folder Upload
 
 ```bash
 chmod -R 755 public/assets/uploads/
@@ -775,13 +781,13 @@ chmod -R 755 public/assets/uploads/
 ## 🧭 Halaman Website
 
 | Halaman | URL | Data Utama | Fungsi |
-|---|---|---|---|
-| **Beranda** | `/` | Ringkasan konten (galeri, event, UMKM) | Landing page utama |
+|:---|:---|:---|:---|
+| **Beranda** | `/` | Galeri, event, UMKM terbaru | Landing page utama |
 | **Wisata** | `/wisata` | Informasi objek wisata | Pengenalan wisata kampung |
-| **Galeri** | `/galeri` | Foto publik berdasarkan kategori | Showcase visual kampung |
-| **Event** | `/event` | Jadwal, status, jam, lokasi, link info | Informasi kegiatan & acara |
-| **UMKM** | `/umkm` | Usaha lokal + kontak + produk | Promosi UMKM warga |
-| **Lokasi** | `/lokasi` | Peta & informasi lokasi | Panduan menuju kampung |
+| **Galeri** | `/galeri` | Foto publik per kategori | Showcase visual kampung |
+| **Event** | `/event` | Jadwal, status, jam, lokasi | Informasi kegiatan & acara |
+| **UMKM** | `/umkm` | Usaha lokal, kontak, produk | Promosi UMKM warga |
+| **Lokasi** | `/lokasi` | Peta & info lokasi | Panduan menuju kampung |
 | **Kontak** | `/kontak` | Info kontak pengelola | Komunikasi dengan pengelola |
 | **Kritik & Saran** | `/kritik-saran` | Form & daftar pesan publik | Feedback pengunjung |
 | **Admin Login** | `/admin/login` | Form autentikasi | Pintu masuk panel admin |
@@ -795,64 +801,55 @@ chmod -R 755 public/assets/uploads/
 
 ## 🔐 Fitur Keamanan
 
-Aplikasi ini menerapkan sejumlah lapisan keamanan dasar yang sesuai untuk deployment publik:
+### CSRF Protection
 
-### 🛡️ CSRF Protection
-- Setiap form POST mengandung token CSRF tersembunyi yang digenerate oleh `app/core/Csrf.php`.
-- Token divalidasi sebelum memproses request; request tanpa token valid ditolak.
-- Token menggunakan `random_bytes()` 32-byte yang dienkode hex.
+Setiap form POST mengandung token CSRF tersembunyi yang digenerate oleh `app/core/Csrf.php` menggunakan `random_bytes()` 32-byte dienkode hex. Token divalidasi sebelum memproses request; request tanpa token valid ditolak.
 
-### 🔒 Session Hardening
-- `session_regenerate_id(true)` dipanggil setelah login berhasil untuk mencegah **session fixation attack**.
-- Session dikonfigurasi dengan atribut keamanan tambahan.
+### Session Hardening
 
-### 🚫 Login Throttle (Anti Brute-Force)
-- Dikelola oleh `app/core/LoginThrottle.php` + tabel `auth_login_attempts`.
-- Percobaan login dicatat per kombinasi **IP address + username**.
-- Setelah melewati batas percobaan, akun/IP diblokir sementara (`blocked_until`).
-- Data percobaan lama (>2 hari) otomatis dibersihkan.
+`session_regenerate_id(true)` dipanggil setelah login berhasil untuk mencegah **session fixation attack**. Session dikonfigurasi dengan atribut keamanan tambahan.
 
-### 📁 Validasi Upload File
-- Helper `app/helpers/upload.php` memvalidasi:
-  - **MIME type** file yang diunggah (hanya gambar yang diizinkan).
-  - **Ukuran file** sesuai batas konfigurasi.
-  - **Pemeriksaan konten** untuk memastikan file benar-benar berupa gambar.
-- Nama file di-rename menggunakan timestamp + random string untuk mencegah path traversal.
+### Login Throttle (Anti Brute-Force)
 
-### 🗺️ Route Destruktif Hanya via POST
-- Semua operasi hapus (`delete`), ubah status (`toggle`, `publish`, `tampilkan`, dll.) didefinisikan sebagai route POST — bukan GET.
-- Mencegah serangan CSRF berbasis `<img src>` atau link manipulation.
+Dikelola oleh `app/core/LoginThrottle.php` bersama tabel `auth_login_attempts`. Percobaan login dicatat per kombinasi **IP address + username**. Setelah melewati batas percobaan, akun/IP diblokir sementara via kolom `blocked_until`. Data percobaan lebih dari 2 hari otomatis dibersihkan.
 
-### 📝 Security Logging
-- `app/core/SecurityLogger.php` mencatat kejadian penting ke `storage/logs/`:
-  - Controller/class/method yang tidak ditemukan (potensi route fuzzing).
-  - Aksi-aksi admin yang relevan secara keamanan.
-- Log tersimpan di luar `public/` sehingga tidak dapat diakses langsung lewat browser.
+### Validasi Upload File
 
-### 🚧 Blokir Akses File Sensitif (`.htaccess`)
-- File `.htaccess` di root dan di `public/` mengkonfigurasi:
-  - Semua request diarahkan melalui `public/index.php` (front controller pattern).
-  - Akses langsung ke folder `app/`, `config/`, `routes/`, `storage/`, dan `database/` diblokir.
-  - File `.env`, `.gitignore`, dan file PHP di luar `public/` tidak dapat diakses browser.
+Helper `app/helpers/upload.php` memvalidasi MIME type, ukuran file, dan isi file untuk memastikan hanya gambar valid yang diterima. Nama file di-rename menggunakan timestamp + random string untuk mencegah path traversal.
+
+### Route Destruktif Hanya via POST
+
+Semua operasi hapus dan ubah status didefinisikan sebagai route POST — bukan GET. Ini mencegah serangan CSRF berbasis `<img src>` atau link manipulation.
+
+### Security Logging
+
+`app/core/SecurityLogger.php` mencatat kejadian penting ke `storage/logs/` — termasuk controller/class/method yang tidak ditemukan (potensi route fuzzing). Log tersimpan di luar `public/` sehingga tidak dapat diakses langsung via browser.
+
+### Blokir Akses File Sensitif via `.htaccess`
+
+File `.htaccess` mengkonfigurasi front controller pattern dan memblokir akses langsung ke folder `app/`, `config/`, `routes/`, `storage/`, dan `database/`, serta file `.env` dan `.gitignore`.
 
 ---
 
 ## 📁 Asset & Frontend
 
 ### CSS
+
 | File | Ukuran | Fungsi |
-|---|---|---|
+|:---|:---|:---|
 | `public/assets/css/style.css` | ~60 KB | Stylesheet halaman publik — layout, tipografi, komponen |
 | `public/assets/css/admin.css` | ~42 KB | Stylesheet panel admin — sidebar, tabel, form, card |
 
 ### JavaScript
+
 | File | Ukuran | Fungsi |
-|---|---|---|
+|:---|:---|:---|
 | `public/assets/js/app.js` | ~30 KB | Logic utama frontend (navigasi, galeri, interaksi UI) |
 | `public/assets/js/main.js` | ~3.8 KB | Inisialisasi global, event listener umum |
-| `public/assets/js/swal-helper.js` | ~5 KB | Wrapper helper untuk SweetAlert2 (konfirmasi hapus, notifikasi) |
+| `public/assets/js/swal-helper.js` | ~5 KB | Wrapper helper SweetAlert2 (konfirmasi hapus, notifikasi) |
 
 ### Library Eksternal (CDN)
+
 - **Bootstrap Icons** — Ikon UI untuk navigasi, tombol, dan indikator status.
 - **SweetAlert2** — Dialog konfirmasi & notifikasi yang lebih ramah pengguna dibanding `alert()` bawaan browser.
 
@@ -860,10 +857,10 @@ Aplikasi ini menerapkan sejumlah lapisan keamanan dasar yang sesuai untuk deploy
 
 ## ⚙️ Konfigurasi Environment
 
-Aplikasi membaca konfigurasi dari **environment variable** melalui fungsi helper `cfg_env()` di `config/database.php`. Ini memungkinkan konfigurasi yang berbeda untuk environment `local` dan `production` tanpa mengubah kode.
+Aplikasi membaca konfigurasi dari **environment variable** melalui fungsi `cfg_env()` di `config/database.php`.
 
 | Variable | Default | Keterangan |
-|---|---|---|
+|:---|:---|:---|
 | `APP_ENV` | `local` | Environment aktif (`local` atau `production`) |
 | `DB_HOST` | `localhost` | Host database MySQL |
 | `DB_USER` | `root` | Username database |
@@ -873,7 +870,7 @@ Aplikasi membaca konfigurasi dari **environment variable** melalui fungsi helper
 | `DB_AUTO_INIT` | `true` (jika `local`) | Auto-create tabel jika belum ada |
 | `DB_AUTO_SEED` | `true` (jika non-production) | Auto-insert data awal (admin default, dll.) |
 
-> **Catatan:** `DB_AUTO_INIT` juga menjalankan `ensureColumn()` yang otomatis menambahkan kolom baru jika belum ada — berguna untuk migrasi skema sederhana tanpa alat migrasi terpisah.
+> `DB_AUTO_INIT` juga menjalankan `ensureColumn()` yang otomatis menambahkan kolom baru jika belum ada — berguna untuk migrasi skema sederhana tanpa alat migrasi terpisah.
 
 ---
 
@@ -893,56 +890,44 @@ find app/controllers -name "*.php" -exec php -l {} \;
 find app/core -name "*.php" -exec php -l {} \;
 ```
 
-### Smoke Test Endpoint (Manual)
+### Smoke Test Endpoint
 
-Akses URL berikut di browser atau gunakan `curl` setelah menjalankan server:
-
-```text
+```
 # Halaman Publik
-GET  /                           → 200 OK, tampil beranda
-GET  /galeri                     → 200 OK, daftar foto galeri
-GET  /event                      → 200 OK, daftar event
-GET  /umkm                       → 200 OK, direktori UMKM
-GET  /kritik-saran               → 200 OK, form kritik & saran
-GET  /lokasi                     → 200 OK, halaman lokasi
-GET  /kontak                     → 200 OK, halaman kontak
+GET  /                    -> 200 OK, tampil beranda
+GET  /galeri              -> 200 OK, daftar foto galeri
+GET  /event               -> 200 OK, daftar event
+GET  /umkm                -> 200 OK, direktori UMKM
+GET  /kritik-saran        -> 200 OK, form kritik & saran
+GET  /lokasi              -> 200 OK, halaman lokasi
+GET  /kontak              -> 200 OK, halaman kontak
 
 # Admin
-GET  /admin/login                → 200 OK, form login tampil
-POST /admin/login/proses         → redirect ke dashboard jika valid
-GET  /admin/dashboard            → 302 redirect ke login jika belum login
-GET  /admin/galeri               → 302 redirect ke login jika belum login
+GET  /admin/login         -> 200 OK, form login tampil
+POST /admin/login/proses  -> redirect ke dashboard jika kredensial valid
+GET  /admin/dashboard     -> 302 redirect ke login jika belum login
+GET  /admin/galeri        -> 302 redirect ke login jika belum login
 
-# Error
-GET  /halaman-tidak-ada          → 404 Not Found, tampil error page
-```
-
-### Pengujian Login Throttle
-
-```bash
-# Coba login dengan kredensial salah berulang kali
-# untuk memverifikasi bahwa sistem mulai memblokir setelah N percobaan
-curl -X POST http://127.0.0.1:8088/admin/login/proses \
-  -d "username=admin&password=salah&csrf_token=..."
+# Error Handling
+GET  /halaman-tidak-ada   -> 404 Not Found, tampil error page kustom
 ```
 
 ---
 
 ## 📌 Catatan Deployment
 
-### Untuk Hosting Shared (cPanel / InfinityFree)
+### Hosting Shared (cPanel / InfinityFree)
 
-1. **Upload seluruh folder** ke direktori `public_html` (atau subdirektori).
-2. Pastikan `public/` menjadi **document root** — atau salin isi `public/` ke `public_html/` dan sesuaikan path di `public/index.php`.
-3. **Import SQL** melalui phpMyAdmin menggunakan file `kampung_ketupat.sql`.
-4. **Set environment variable** melalui cPanel atau buat file `.env` (jika hosting mendukung pembacaan `.env`).
-5. Pastikan `mod_rewrite` aktif (biasanya sudah aktif di cPanel).
-6. Berikan permission `755` pada folder `public/assets/uploads/` dan subdirektori-nya.
+1. Upload seluruh folder ke direktori `public_html` atau subdirektori yang diinginkan.
+2. Pastikan `public/` menjadi **document root**, atau salin isi `public/` ke `public_html/` dan sesuaikan path di `public/index.php`.
+3. Import SQL melalui phpMyAdmin menggunakan file `kampung_ketupat.sql`.
+4. Set environment variable melalui cPanel atau sesuaikan nilai default di `config/database.php`.
+5. Pastikan `mod_rewrite` aktif — biasanya sudah aktif di cPanel.
+6. Berikan permission `755` pada folder `public/assets/uploads/` dan seluruh subdirektorinya.
 
-### Untuk VPS / Server Dedicated
+### VPS / Server Dedicated (Nginx)
 
 ```nginx
-# Contoh konfigurasi Nginx
 server {
     listen 80;
     server_name kampung-ketupat.com;
@@ -966,48 +951,43 @@ server {
 - [ ] Ubah `APP_ENV=production`
 - [ ] Nonaktifkan `DB_AUTO_INIT` dan `DB_AUTO_SEED`
 - [ ] Ganti password admin default
-- [ ] Pastikan folder `storage/logs/` writable tapi tidak dapat diakses publik
+- [ ] Pastikan folder `storage/logs/` writable namun tidak dapat diakses publik
 - [ ] Aktifkan HTTPS (SSL/TLS)
-- [ ] Blokir akses langsung ke file di luar `public/`
+- [ ] Verifikasi blokir akses langsung ke file di luar `public/`
 
 ---
 
 ## 📊 Sumber Daya Proyek
 
-Berikut adalah tautan ke semua sumber daya pendukung proyek ini:
-
 ### 🌍 Website Live
-> Aplikasi telah di-deploy dan dapat diakses publik di:
->
-> **[https://kampung-ketupat.infinityfree.me/](https://kampung-ketupat.infinityfree.me/)**
 
-### 📊 Slide Presentasi (PPT/Canva)
-> Slide deck yang digunakan untuk presentasi proyek:
->
-> **[https://canva.link/54cr2ep7p6ouwdr](https://canva.link/54cr2ep7p6ouwdr)**
->
-> Berisi overview proyek, arsitektur, fitur utama, demo screenshot, dan rencana pengembangan.
+Aplikasi telah di-deploy dan dapat diakses publik di:
+
+**[https://kampung-ketupat.infinityfree.me/](https://kampung-ketupat.infinityfree.me/)**
+
+### 📊 Slide Presentasi (PPT / Canva)
+
+Slide deck untuk presentasi proyek — berisi overview, arsitektur, fitur utama, screenshot demo, dan rencana pengembangan:
+
+**[https://canva.link/54cr2ep7p6ouwdr](https://canva.link/54cr2ep7p6ouwdr)**
 
 ### 📄 Laporan Proyek
-> Dokumen laporan lengkap tersimpan di Google Drive:
->
-> **[Google Drive – Laporan](https://drive.google.com/drive/folders/1NnE_3vCfHOyXmjiId5lK8Y-TGkFcHNcU?usp=sharing)**
->
-> Meliputi latar belakang, analisis kebutuhan, perancangan sistem, implementasi, pengujian, dan kesimpulan.
+
+Dokumen laporan lengkap — latar belakang, analisis kebutuhan, perancangan sistem, implementasi, pengujian, dan kesimpulan:
+
+**[Google Drive – Laporan](https://drive.google.com/drive/folders/1NnE_3vCfHOyXmjiId5lK8Y-TGkFcHNcU?usp=sharing)**
 
 ### 🎙️ Dokumentasi Wawancara
-> Hasil wawancara dengan stakeholder/pengelola kampung:
->
-> **[Google Drive – Wawancara](https://drive.google.com/drive/folders/1nMXrLRJ-9rJV7JU9HYuCDG_3R1cVz6eg?usp=sharing)**
->
-> Berisi rekaman/transkrip wawancara yang menjadi dasar analisis kebutuhan pengguna.
+
+Rekaman dan transkrip wawancara dengan stakeholder/pengelola kampung sebagai dasar analisis kebutuhan pengguna:
+
+**[Google Drive – Wawancara](https://drive.google.com/drive/folders/1nMXrLRJ-9rJV7JU9HYuCDG_3R1cVz6eg?usp=sharing)**
 
 ### 🗺️ Flowchart Sistem (Draw.io)
-> Diagram alur sistem yang menggambarkan alur request, proses bisnis, dan alur autentikasi:
->
-> **[Lihat Flowchart di Google Drive](https://drive.google.com/file/d/1xvJ7Z_Qhu0zfzCXTjoyFLHQ2VosqakOO/view?usp=drive_link)**
->
-> Dibuat menggunakan Draw.io; mencakup flowchart user flow, admin flow, dan diagram arsitektur MVC.
+
+Diagram alur sistem mencakup user flow, admin flow, alur autentikasi, dan arsitektur MVC:
+
+**[Lihat Flowchart di Google Drive](https://drive.google.com/file/d/1xvJ7Z_Qhu0zfzCXTjoyFLHQ2VosqakOO/view?usp=drive_link)**
 
 ---
 
@@ -1023,9 +1003,12 @@ Kontribusi, laporan bug, dan saran peningkatan sangat disambut. Silakan buka **I
 
 ![Footer](https://capsule-render.vercel.app/api?type=waving&height=120&color=0:0d9488,100:0f172a&section=footer)
 
-**Kampung Ketupat Web** · Dibangun dengan ❤️ menggunakan PHP Native MVC
+**Kampung Ketupat Web** &nbsp;·&nbsp; Dibangun dengan ❤️ menggunakan PHP Native MVC
 
-[![Live](https://img.shields.io/badge/🌍_Live_Website-kampung--ketupat.infinityfree.me-0d9488?style=flat-square)](https://kampung-ketupat.infinityfree.me/)
+[![Live](https://img.shields.io/badge/Website_Live-kampung--ketupat.infinityfree.me-0d9488?style=flat-square)](https://kampung-ketupat.infinityfree.me/)
+[![PPT](https://img.shields.io/badge/Slide_Presentasi-Canva-7952B3?style=flat-square)](https://canva.link/54cr2ep7p6ouwdr)
 [![License](https://img.shields.io/badge/License-MIT-22c55e?style=flat-square)](https://opensource.org/licenses/MIT)
+
+</div>
 
 </div>

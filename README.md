@@ -195,7 +195,7 @@ Tapi kalau jadi portfolio kamu, jangan lupa ganti namanya ya 😄
 ### 🌐 Live Demo & Sumber Daya Proyek
 
 | Sumber Daya | Tautan |
-|:---|:---|
+|---|---|
 | 🌍 **Website Live** | [kampung-ketupat.infinityfree.me](https://kampung-ketupat.infinityfree.me/) |
 | 📊 **Slide Presentasi (PPT)** | [Lihat di Canva](https://canva.link/54cr2ep7p6ouwdr) |
 | 📄 **Laporan Proyek** | [Google Drive – Laporan](https://drive.google.com/drive/folders/1NnE_3vCfHOyXmjiId5lK8Y-TGkFcHNcU?usp=sharing) |
@@ -336,7 +336,7 @@ Website ini menyediakan dua lapisan utama:
 ## 🛠️ Stack Teknologi
 
 | Kategori | Teknologi |
-|:---|:---|
+|---|---|
 | **Backend Language** | PHP 8.2+ (native, tanpa framework) |
 | **Database** | MySQL 8.0+ / MariaDB |
 | **Arsitektur** | MVC (Model-View-Controller) custom, dibangun dari nol |
@@ -585,7 +585,7 @@ Semua route didefinisikan di `routes/web.php` dan diproses oleh `Router.php`.
 ### Route Publik
 
 | Method | Path | Controller@Method | Keterangan |
-|:---|:---|:---|:---|
+|---|---|---|---|
 | GET | `/` | `BerandaController@index` | Halaman beranda |
 | GET | `/wisata` | `WisataController@index` | Halaman wisata |
 | GET | `/event` | `EventController@index` | Daftar event |
@@ -599,7 +599,7 @@ Semua route didefinisikan di `routes/web.php` dan diproses oleh `Router.php`.
 ### Route Autentikasi Admin
 
 | Method | Path | Controller@Method | Keterangan |
-|:---|:---|:---|:---|
+|---|---|---|---|
 | GET | `/admin/login` | `AuthController@login` | Form login |
 | POST | `/admin/login/proses` | `AuthController@proses` | Proses login |
 | POST | `/admin/logout` | `AuthController@logout` | Logout (CSRF-protected) |
@@ -607,7 +607,7 @@ Semua route didefinisikan di `routes/web.php` dan diproses oleh `Router.php`.
 ### Route Admin — Dashboard & Galeri
 
 | Method | Path | Controller@Method | Keterangan |
-|:---|:---|:---|:---|
+|---|---|---|---|
 | GET | `/admin/dashboard` | `AdminController@dashboard` | Dashboard statistik |
 | GET | `/admin/galeri` | `AdminGaleriController@index` | Daftar galeri |
 | GET | `/admin/galeri/create` | `AdminGaleriController@create` | Form tambah foto |
@@ -621,7 +621,7 @@ Semua route didefinisikan di `routes/web.php` dan diproses oleh `Router.php`.
 ### Route Admin — Event
 
 | Method | Path | Controller@Method | Keterangan |
-|:---|:---|:---|:---|
+|---|---|---|---|
 | GET | `/admin/event` | `AdminEventController@index` | Daftar event |
 | GET | `/admin/event/create` | `AdminEventController@create` | Form tambah event |
 | POST | `/admin/event/store` | `AdminEventController@store` | Simpan event baru |
@@ -632,7 +632,7 @@ Semua route didefinisikan di `routes/web.php` dan diproses oleh `Router.php`.
 ### Route Admin — UMKM
 
 | Method | Path | Controller@Method | Keterangan |
-|:---|:---|:---|:---|
+|---|---|---|---|
 | GET | `/admin/umkm` | `AdminUMKMController@index` | Daftar UMKM |
 | GET | `/admin/umkm/create` | `AdminUMKMController@create` | Form tambah UMKM |
 | POST | `/admin/umkm/store` | `AdminUMKMController@store` | Simpan UMKM baru |
@@ -643,7 +643,7 @@ Semua route didefinisikan di `routes/web.php` dan diproses oleh `Router.php`.
 ### Route Admin — Kritik & Saran
 
 | Method | Path | Controller@Method | Keterangan |
-|:---|:---|:---|:---|
+|---|---|---|---|
 | GET | `/admin/kritik-saran` | `AdminKritikController@index` | Daftar pesan masuk |
 | GET | `/admin/kritik-saran/arsip` | `AdminKritikController@arsip` | Arsip pesan |
 | POST | `/admin/kritik-saran/terima` | `AdminKritikController@terima` | Terima pesan |
@@ -681,7 +681,7 @@ app/core/Router.php           <- Parsing URL & dispatch ke controller
 ### Komponen Core
 
 | File | Peran |
-|:---|:---|
+|---|---|
 | `Router.php` | Mencocokkan URL + HTTP method ke `Controller@method`, menangani 404 |
 | `Controller.php` | Base class controller; helper untuk memuat view |
 | `Model.php` | Base class model; akses ke koneksi database global |
@@ -781,7 +781,7 @@ chmod -R 755 public/assets/uploads/
 ## 🧭 Halaman Website
 
 | Halaman | URL | Data Utama | Fungsi |
-|:---|:---|:---|:---|
+|---|---|---|---|
 | **Beranda** | `/` | Galeri, event, UMKM terbaru | Landing page utama |
 | **Wisata** | `/wisata` | Informasi objek wisata | Pengenalan wisata kampung |
 | **Galeri** | `/galeri` | Foto publik per kategori | Showcase visual kampung |
@@ -836,14 +836,14 @@ File `.htaccess` mengkonfigurasi front controller pattern dan memblokir akses la
 ### CSS
 
 | File | Ukuran | Fungsi |
-|:---|:---|:---|
+|---|---|---|
 | `public/assets/css/style.css` | ~60 KB | Stylesheet halaman publik — layout, tipografi, komponen |
 | `public/assets/css/admin.css` | ~42 KB | Stylesheet panel admin — sidebar, tabel, form, card |
 
 ### JavaScript
 
 | File | Ukuran | Fungsi |
-|:---|:---|:---|
+|---|---|---|
 | `public/assets/js/app.js` | ~30 KB | Logic utama frontend (navigasi, galeri, interaksi UI) |
 | `public/assets/js/main.js` | ~3.8 KB | Inisialisasi global, event listener umum |
 | `public/assets/js/swal-helper.js` | ~5 KB | Wrapper helper SweetAlert2 (konfirmasi hapus, notifikasi) |
@@ -860,7 +860,7 @@ File `.htaccess` mengkonfigurasi front controller pattern dan memblokir akses la
 Aplikasi membaca konfigurasi dari **environment variable** melalui fungsi `cfg_env()` di `config/database.php`.
 
 | Variable | Default | Keterangan |
-|:---|:---|:---|
+|---|---|---|
 | `APP_ENV` | `local` | Environment aktif (`local` atau `production`) |
 | `DB_HOST` | `localhost` | Host database MySQL |
 | `DB_USER` | `root` | Username database |
@@ -1008,7 +1008,5 @@ Kontribusi, laporan bug, dan saran peningkatan sangat disambut. Silakan buka **I
 [![Live](https://img.shields.io/badge/Website_Live-kampung--ketupat.infinityfree.me-0d9488?style=flat-square)](https://kampung-ketupat.infinityfree.me/)
 [![PPT](https://img.shields.io/badge/Slide_Presentasi-Canva-7952B3?style=flat-square)](https://canva.link/54cr2ep7p6ouwdr)
 [![License](https://img.shields.io/badge/License-MIT-22c55e?style=flat-square)](https://opensource.org/licenses/MIT)
-
-</div>
 
 </div>

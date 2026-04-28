@@ -177,8 +177,6 @@ Tapi kalau jadi portfolio kamu, jangan lupa ganti namanya ya 😄
 
 ![Banner](https://capsule-render.vercel.app/api?type=waving&height=260&color=0:0f172a,50:065f46,100:0d9488&text=Kampung%20Ketupat%20Web&fontColor=ffffff&fontSize=46&fontAlignY=38&desc=Website%20Wisata%20%C2%B7%20Admin%20Panel%20%C2%B7%20PHP%20MVC%20%C2%B7%20MySQL&descAlignY=58&animation=fadeIn)
 
-<div align="center">
-
 [![PHP](https://img.shields.io/badge/PHP-8.2+-777BB4?style=for-the-badge&logo=php&logoColor=white)](https://www.php.net/)
 [![MySQL](https://img.shields.io/badge/MySQL-8.0+-4479A1?style=for-the-badge&logo=mysql&logoColor=white)](https://www.mysql.com/)
 [![Bootstrap Icons](https://img.shields.io/badge/Bootstrap_Icons-1.x-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white)](https://icons.getbootstrap.com/)
@@ -186,11 +184,7 @@ Tapi kalau jadi portfolio kamu, jangan lupa ganti namanya ya 😄
 [![License](https://img.shields.io/badge/License-MIT-22c55e?style=for-the-badge)](https://opensource.org/licenses/MIT)
 [![Status](https://img.shields.io/badge/Status-Live-0d9488?style=for-the-badge)](https://kampung-ketupat.infinityfree.me/)
 
-</div>
-
 ---
-
-<div align="center">
 
 ### 🌐 Live Demo & Sumber Daya Proyek
 
@@ -201,8 +195,6 @@ Tapi kalau jadi portfolio kamu, jangan lupa ganti namanya ya 😄
 | 📄 **Laporan Proyek** | [Google Drive – Laporan](https://drive.google.com/drive/folders/1NnE_3vCfHOyXmjiId5lK8Y-TGkFcHNcU?usp=sharing) |
 | 🎙️ **Drive Wawancara** | [Google Drive – Wawancara](https://drive.google.com/drive/folders/1nMXrLRJ-9rJV7JU9HYuCDG_3R1cVz6eg?usp=sharing) |
 | 🗺️ **Flowchart (Draw.io)** | [Lihat Diagram Alur](https://drive.google.com/file/d/1xvJ7Z_Qhu0zfzCXTjoyFLHQ2VosqakOO/view?usp=drive_link) |
-
-</div>
 
 ---
 
